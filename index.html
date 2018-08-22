@@ -20,48 +20,48 @@
 
 <body>
 
-  <div class="container-fluid">
+<div class="container-fluid">
 
-      <div class="carousel-slides">
-        <div class="slides">
-          <img src="img/compass.jpg" alt="compass" height="570">
-          <p></p>
-        </div>
-
-        <div class="slides">
-          <img src="img/design.jpg"alt="design" height="550">
-        </div>
-
-        <!-- <div class="slides">
-          <img src="img/imac.png"  alt="imac" height="550">
-        </div> -->
-
-        <div class="slides">
-          <img src="img/apple.jpg"alt="apple" height="550">
-          <p></p>
-        </div>
-
-        <div class="slides">
-          <img src="img/phone.jpg" alt="phone" height="550">
-          <p></p>
-        </div>
-
-        <div class="slides">
-          <img src="img/wake.jpg"  alt="wakeboard" height="550">
-          <p></p>
-        </div>
+<form name="calculatrice">
+  
+  <div class="row col-3">
+    <input name="result" class="affiche"></input>
   </div>
-    <div class="select d-flex justify-content-between">
-      <div class="point-select">
-      <a class="prev" onclick="plusSlides(-1, 0)"><i class="fas fa-arrow-left fa-2x"></i></a>
-    </div>
-    <div class="point-select">
-      <a class="next" onclick="plusSlides(1, 0)"><i class="fas fa-arrow-right fa-2x"></i></a>
-    </div>
-    </div>
+
+  <div class="row col-3">
+    <input type="button" value="7" onClick="ajouter('7')">
+    <input type="button" value="8" onClick="ajouter('8')">
+    <input type="button" value="9" onClick="ajouter('9')">
+    <input type="button" value=":" onClick="ajouter('/')">
+  </div>
+
+  <div class="row col-3">
+    <input type="button" value="4" onClick="ajouter('4')">
+    <input type="button" value="5" onClick="ajouter('5')">
+    <input type="button" value="6" onClick="ajouter('6')">
+    <input type="button" value="x" onClick="ajouter('*')">
+  </div>
+
+  <div class="row col-3">
+    <input type="button" value="1" onClick="ajouter('1')">
+    <input type="button" value="2" onClick="ajouter('2')">
+    <input type="button" value="3" onClick="ajouter('3')">
+    <input type="button" value="-" onClick="ajouter('-')">
+  </div>
+
+  <div class="row col-3">
+    <input type="button" value="0" onClick="ajouter('0')">
+    <input type="button" value="." onClick="ajouter('.')">
+    <input type="button" value="+" onClick="ajouter('+')">
+    <input type="button" value="=" onClick="calcul()">
+  </div>
+
+  <div class="row col-3">
+    <input type="reset" value="ON/C">
+  </div>
+</form>
 </div>
 
-<!--résolution des images : 1280x853-->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

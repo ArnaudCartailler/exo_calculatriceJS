@@ -1,43 +1,34 @@
 
-var slideIndex = [1,1];
-var slideId = ["slides"];
+function verification(ajout) {
 
-function showSlides(n, no) {
+  var all ="1234567890[]()+-.*,/";
 
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
+  for (var i = 0; i < ajout.length; i++){
 
-  if (n > x.length) {
-    slideIndex[no] = 1
-  }
-  if (n < 1) {
-    slideIndex[no] = x.length
-  }
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
+  if (all.indexOf(ajout.charAt(i)) < 0 )
+     return false;
+     return true;
+   }
+   /*
+   Indexof renvoit à la position du caractère de la chaine.
+     charAt renvoit à l'index choisit.
+   */
+ }
 
-  x[slideIndex[no]-1].style.display = "block";
+ function calcul() {
 
-}
+   var a = 0;
+   if (verification(document.calculatrice.result.value)){
+     a = eval(document.calculatrice.result.value);
+     /*Eval prend en compte la chaine de caractère*/
+     document.calculatrice.result.value = a;
+   }
 
-var myIndex = 0;
-carousel();
+ }
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
+ function ajouter(caracteres) {
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {
-      myIndex = 1
-    }
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2500);
-}
+   /*permet la concaténation*/
+   document.calculatrice.result.value =
+   document.calculatrice.result.value + caracteres;
+ }

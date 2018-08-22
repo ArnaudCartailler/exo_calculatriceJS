@@ -96,36 +96,36 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  .container-fluid{
+    margin-top: 20%;
+    width: auto;
+  }
 
-.container-fluid{
-  width:100%;
-}
-.container-fluid .slides{
-  position: relative;
-  width : auto;
-  margin-left: 15%;
-}
-
-.container-fluid .slides img{
-  border : 2px solid black;  
-}
-
-.container-fluid .select{
-  width:60%;
-  position: absolute;
-  left : 220px;
-  top : 40%;
-}
-
-.container-fluid .select .point-select:hover{
-  padding: 10px 10px 10px 10px;
-  background-color :black;
-  opacity: 0.8;
-  color :white;
-  border-radius: 3px;
-}
+  .container-fluid p{
+    font-size: 30px;
+    color:white;
+  }
 
 
+  .container-fluid .row{
+    margin-left: 40%;
+    background-color: lightgrey;
+    justify-content: center;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .container-fluid .row button{
+    font-size: 40px;
+    margin: 10px 0px 10px 10px;
+  }
+
+  .container-fluid .row .moins{
+    padding-left: 18px;
+  }
+
+  .container-fluid .row .point{
+    padding-left: 20px;
+  }
 
 
 /* ==========================================================================
