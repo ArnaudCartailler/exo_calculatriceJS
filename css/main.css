@@ -96,37 +96,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  .container-fluid{
-    margin-top: 20%;
-    width: auto;
-  }
 
-  .container-fluid p{
-    font-size: 30px;
-    color:white;
-  }
-
-
-  .container-fluid .row{
+  form{
     margin-left: 40%;
-    background-color: lightgrey;
-    justify-content: center;
-    box-shadow: 1px 2px 5px black;
+    margin-top: 20%;
+    padding: 5px 5px 5px 5px;
   }
 
-  .container-fluid .row button{
-    font-size: 40px;
-    margin: 10px 0px 10px 10px;
+  .row .affiche{
+    width : 100%;
+    margin-left: 30px;
   }
-
-  .container-fluid .row .moins{
-    padding-left: 18px;
-  }
-
-  .container-fluid .row .point{
-    padding-left: 20px;
-  }
-
 
 /* ==========================================================================
    Helper classes
