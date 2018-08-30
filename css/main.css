@@ -109,6 +109,10 @@ textarea {
     border : 1px solid black;
   }
 
+  .row .affiche:hover{
+    width : 90%;
+  }
+
   .lines{
     background-color: lightgrey;
     padding : 10px 0px 10px 0px;
