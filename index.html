@@ -22,42 +22,54 @@
 
 <div class="container-fluid">
 
-<form name="calculatrice">
+<form class="calculatrice" name="calculatrice d-flex align-item-center">
 
-  <div class="row col-3">
-    <input id="display" name="result" class="affiche"></input>
+  <div class="row">
+    <div class="col-md-3 offset-md-3 lines">
+      <input id="display" name="result" class="affiche"></input>
+    </div>
   </div>
 
-  <div class="row col-md-3 col-xs-1 d-flex ml-3 justify-content-between">
-    <input type="button" value="7" onClick="add('7')">
-    <input type="button" value="8" onClick="add('8')">
-    <input type="button" value="9" onClick="add('9')">
-    <input type="button" value=":" onClick="ope('/')">
+  <div class="row">
+    <div class="col-md-3 offset-md-3 lines">
+      <input type="button" value="7" onClick="add('7')">
+      <input type="button" value="8" onClick="add('8')">
+      <input type="button" value="9" onClick="add('9')">
+      <input type="button" value=":" onClick="ope('/')">
+    </div>
   </div>
 
-  <div class="row col-md-3 col-xs-1 d-flex ml-3 justify-content-between">
-    <input type="button" value="4" onClick="add('4')">
-    <input type="button" value="5" onClick="add('5')">
-    <input type="button" value="6" onClick="add('6')">
-    <input type="button" value="x" onClick="ope('*')">
+  <div class="row">
+    <div class="col-md-3 offset-md-3 lines">
+      <input type="button" value="4" onClick="add('4')">
+      <input type="button" value="5" onClick="add('5')">
+      <input type="button" value="6" onClick="add('6')">
+      <input type="button" value="x" onClick="ope('*')">
+    </div>
   </div>
 
-  <div class="row col-md-3 col-xs-1 d-flex ml-3 justify-content-between">
-    <input type="button" value="1" onClick="add('1')">
-    <input type="button" value="2" onClick="add('2')">
-    <input type="button" value="3" onClick="add('3')">
-    <input type="button" value="-" onClick="compatible('-')">
+  <div class="row">
+    <div class="col-md-3 offset-md-3 lines">
+      <input type="button" value="1" onClick="add('1')">
+      <input type="button" value="2" onClick="add('2')">
+      <input type="button" value="3" onClick="add('3')">
+      <input type="button" value="-" onClick="ope('-')">
+    </div>
   </div>
 
-  <div class="row col-md-3 col-xs-1 d-flex ml-3 justify-content-between">
-    <input type="button" value="0" onClick="add('0')">
-    <input type="button" value="." onClick="add('.')">
-    <input type="button" value="+" onClick="('+')">
-    <input type="button" value="=" onClick="calcul()">
+  <div class="row">
+    <div class="col-md-3 offset-md-3 lines">
+      <input type="button" value="0" onClick="add('0')">
+      <input type="button" value="." onClick="add('.')">
+      <input type="button" value="+" onClick="ope('+')">
+      <input type="button" value="=" onClick="calcul()">
+    </div>
   </div>
 
-  <div class="row col-md-3 col-xs-1 d-flex ml-3 justify-content-between">
-    <input type="reset" value="ON/C" onClick="restart()">
+  <div class="row">
+    <div class="col-md-3 offset-md-3 lines">
+      <input type="reset" value="ON/C" class="restart" onClick="restart()">
+    </div>
   </div>
 </form>
 </div>

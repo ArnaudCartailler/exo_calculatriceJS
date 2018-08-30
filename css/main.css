@@ -97,17 +97,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  form{
-    margin-left: 40%;
-    margin-top: 20%;
-    padding: 5px 5px 5px 5px;
+  .calculatrice{
+    margin-left: 150px;
+    margin-top: 150px;
+    width: 70%;
   }
 
   .row .affiche{
-    width : 100%;
-    margin-left: 30px;
+    width : 90%;
+    border-radius: 10px;
   }
 
+  .lines{
+    background-color: lightgrey;
+    padding : 10px 0px 10px 0px;
+    margin-left: 20px;
+    border-radius: 2px;
+  }
+
+  .lines input{
+    width : 40px;
+  }
+
+  .lines input:hover{
+    background-color: grey;
+    color : white;
+    border-radius: 10px;
+    width : 40px;
+  }
+
+  .lines .restart{
+    width : 80px;
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
